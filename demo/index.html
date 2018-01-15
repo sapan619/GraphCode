@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Multi-line D3 chart with legend</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.1/nv.d3.min.css"/>
+    
+
+  
+</head>
+
+<body ng-controller="controller" >
+
+  <div>
+
+        <input type="file" data-read-file="fileContent" accept=".csv" >
+        <input type='button' value="Upload to Server" ng-click="uploadFile()" >
+        <br>
+        <br>
+        <nvd3 id="graph" options="options" data="fileData"></nvd3>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+<script src='https://code.angularjs.org/1.5.8/angular.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.0/d3.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.2/nv.d3.min.js"></script>
+<script src="https://rawgit.com/krispo/angular-nvd3/v1.0.4/dist/angular-nvd3.js"></script>
+<script  src="controllers/controller.js"></script>
+
+
+
+
+</body>
+
+</html>

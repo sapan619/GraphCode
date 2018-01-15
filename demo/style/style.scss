@@ -1,0 +1,79 @@
+$hw-blue: #388CB2;
+$hw-green: #93C070;
+$hw-red: #A94442;
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body, .app-container {
+  height: 100%;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-view {
+  display: flex; 
+  flex-direction: row;
+  flex: 1;
+  padding: 40px;
+}
+
+.line {
+  stroke: #00DECF;
+  stroke-width: 1.5;
+  fill: none;
+  
+  &--blue {
+    stroke: $hw-blue;
+  }
+
+  &--green {
+    stroke: $hw-green;
+  }
+
+  &--red {
+    stroke: $hw-red;
+  }
+
+}
+
+.domain {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1;
+  // shape-rendering: crispEdges;
+}
+
+.tick, .axis-text {
+  fill: #999;
+  font: 11px 'Open Sans', sans-serif;
+}
+
+.legend {
+  fill: #999;
+  font: 13px 'Open Sans', sans-serif;
+  
+  &--blue {
+    fill: $hw-blue;
+  }
+
+  &--green {
+    fill: $hw-green;
+  }
+
+  &--red {
+    fill: $hw-red;
+  }
+}
+
+.line-chart {
+  flex: 1;
+  overflow: hidden;
+}
