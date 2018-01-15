@@ -1,14 +1,18 @@
 var express=require("express");
 var app=express();
+// var mongojs=require("mongojs");
+// var db=mongojs("fissionTest",['fissionTest']);
+//var bodyParser=require("body-parser");
+
 
 app.use(express.static(__dirname+"/demo"));
+//app.use(bodyParser.json());
 
-// app.get('/contactList',function(req,res){
-// console.log("get request");
-
-
-
-// res.json(contactList);
+//code for sending data to MongoDb database
+// app.post('/fissionTest',function(req,res){
+// db.fissionTest.insert(req.body,function(error,doc){
+//    res.json(doc);
+//}
 // });
 
 app.listen(3000);
