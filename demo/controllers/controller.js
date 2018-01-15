@@ -4,7 +4,17 @@ var app = angular.module('app', ['nvd3']);
 app.controller('controller', 
 function($scope,$http, readFileData) {
   $scope.fileDataObj = {};
-//code to upload the file on server ie, to call a POST method and pass the JSON data  
+//code to upload the file on server ie, to call a POST method and pass the JSON data
+  
+  //code to send data to database
+// $scope.sendToDatabase=function(){
+//     $http.post('/fissionTest',$scope.fileData).then(function (response) {
+    //    console.log('get',response)
+    // })
+    // .catch(function (data) {
+    //     console.log("Some error occured");
+    // }); 
+// }
 
 $scope.uploadFile = function() {
   if ($scope.fileContent) {
