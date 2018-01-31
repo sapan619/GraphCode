@@ -16,7 +16,9 @@
   <div>
 
         <input type="file" data-read-file="fileContent" accept=".csv" >
-        <input type='button' value="Upload to Server" ng-click="uploadFile()" >
+        <input type='button' value="Generate Graph" ng-click="uploadFile()" >
+
+        <input type='button' value="Upload to Server" ng-click="sendToDatabase()" >
         <br>
         <br>
         <nvd3 id="graph" options="options" data="fileData"></nvd3>
